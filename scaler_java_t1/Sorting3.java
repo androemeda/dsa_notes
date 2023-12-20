@@ -73,7 +73,7 @@ public class Sorting3{
      * At every level , n elements are being merged.
      * there are total log_2N levels.
      * TC:O(NlogN)
-     * SC: maximum heighr of the tree. --> O(N) (auxiliary space)
+     * SC: maximum height of the tree. --> O(N) (auxiliary space)
      */
     public static int[] mergeSort(int[] A){
 
