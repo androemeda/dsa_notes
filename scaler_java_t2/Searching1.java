@@ -6,7 +6,7 @@ class Searching1{
      *        8    11  13  17  31
      *        10   12  14  22  38
      *        15   18  23  28  40    
-     * TC: O(n+m) i.e. linear.
+     * TC: O(n+m).
      */
     public static boolean searchInSortedMatrix(int[][] A , int target){
         

@@ -64,7 +64,7 @@ class Searching2{
 
     /**
      * GOOGLE,FACEBOOK,TWITTER,APPLE,AMAZON,MICROSOFT,WALMART,NETFLIX,FKIPKART,MYNTRA
-     * Q. given an array which is sorted rotated  , find a target(return its index) (all elements are distinct)
+     * Q. given an array which is sorted rotated , find a target(return its index) (all elements are distinct)
      * Ex: 10 , 20 , 30 , -1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9
      * HW: implement using 2 functions as well as in a single function.
      */

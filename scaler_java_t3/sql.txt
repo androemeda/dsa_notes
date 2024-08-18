@@ -1,0 +1,52 @@
+SELECT IFNULL(
+    (SELECT num 
+     FROM MyNumbers
+     GROUP BY num
+     HAVING COUNT(*) = 1
+     ORDER BY num DESC
+     LIMIT 1), 
+    NULL) AS num;
+
+
+
+delete p1
+from  person p1, person p2
+where p1.id > p2.id
+and p1.email = p2.email;
+select id from person
+
+
+
+insert into students3(firstname , lastname , email , dateOfBirth , isActive)
+            values("kartik" , "deshpande" , "sfds" , "2004-10-28" , true),
+				  ("kartik2" , "deshpande2" , "sfds2" , "2004-10-18" , true),
+				  ("kartik3" , "deshpande3" , "sfds3" , "2004-10-28" , true);
+
+
+
+#Q. select all films which have 'love' in the title but not as a prefix.
+select title from film where title like '_%love%'; #incorrect ex: lovelove
+select title from film where title not like 'love%' and title like '%love%';
+
+
+
+select film.film_id , title , category.category_id , category.name , rental_duration
+from film 
+join film_category using(film_id) #since film_id is common , we can use "using".
+join category on film_category.category_id = category.category_id
+where category.name in ("Action" , "Comedy") and rental_duration > 4
+order by rental_duration , name;
+
+
+
+select w2.id
+from Weather w1 left join Weather w2
+on w2.recordDate = DATE_ADD(w1.recordDate , interval 1 day)
+where w1.temperature < w2.temperature;
+
+
+
+SELECT DATEDIFF(year, '2017/08/25', '2011/08/25') AS DateDiff;
+
+
+having , distinct , like , where , date_add , ate_diff

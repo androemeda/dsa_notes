@@ -32,7 +32,7 @@ public class sorting2{
     /**
      * modify bubble sort such that you sort only the first k elements.
      * this will be better than Arrays.sort()[nlongn] , because here k<logn , hence , loops<nlogn
-     * same question can be don using selection sort also.
+     * same question can be done using selection sort also.
      */
     public static int kthminimum(int[] A , int k){
         int[] arr = A.clone();
